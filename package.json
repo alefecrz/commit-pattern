@@ -9,9 +9,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix"
-    ]
+    "*.js": [ "eslint --fix", "git add"]
   },
   "dependencies": {
     "express": "^4.17.1"

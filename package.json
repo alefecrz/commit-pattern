@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky install",
-    "test": "jest"
+    "test": "jest",
+    "commit" :"git-cz"
   },
   "lint-staged": {
     "*.js": [
@@ -22,7 +23,9 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
+    "commitizen": "^4.2.4",
     "cross-env": "^7.0.3",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.27.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.4",
@@ -30,5 +33,10 @@
     "husky": "^6.0.0",
     "jest": "^27.0.4",
     "lint-staged": "^11.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

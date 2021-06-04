@@ -20,6 +20,8 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "cross-env": "^7.0.3",
     "eslint": "^7.27.0",
     "eslint-config-airbnb-base": "^14.2.1",
